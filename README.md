@@ -1,3 +1,4 @@
+This script has been tested on Unity 2019.4.30f1 or later (Probably works on older versions too)
 # How to use
 - Create windows shortcut of [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) and change it's properties to open with admin rights
 - Or directly open [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) with admin rights
@@ -8,7 +9,7 @@
 3. Open the file and modify it
 
 ## Example
-81-C# Script-NewBehaviourScript.cs
+[81-C# Script-NewBehaviourScript.cs.txt](/Scripts/ModifiedScripts/81-C%23%20Script-NewBehaviourScript.cs.txt/)
 - Default:
 ```cs
 using System.Collections;
