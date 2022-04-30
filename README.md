@@ -1,2 +1,47 @@
-# UnityDefaultScriptUpdater
- Small bash script to update unity default scripts
+# How to use
+- Create windows shortcut and change it's properties to open with admin rights
+- Open [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) with admin rights
+
+# How to customize scripts
+1. Go to C:\Program Files\Unity\Editor\[Version]\Editor\Data\Resources\ScriptTemplates (This is a Unity default path) and copy the script you want to modify
+2. Go to [.Scripts/ModifiedScripts/](/Scripts/ModifiedScripts/) and paste the script
+3. Open the file and modify it
+
+## Example
+81-C# Script-NewBehaviourScript.cs
+- Default:
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        #NOTRIM#
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        #NOTRIM#
+    }
+}
+#ROOTNAMESPACEEND#
+```
+- Custom:
+```cs
+using UnityEngine;
+
+public class #SCRIPTNAME# : MonoBehaviour {
+    private void Start() {}
+
+    private void Update() {}
+}
+```
+
+# How does it work
+The script check the registers to find unity location and copy paste the modified script to that location
