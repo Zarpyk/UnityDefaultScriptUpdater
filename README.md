@@ -1,6 +1,6 @@
 # How to use
-- Create windows shortcut and change it's properties to open with admin rights
-- Open [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) with admin rights
+- Create windows shortcut of [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) and change it's properties to open with admin rights
+- Or directly open [UpdateUnityDefaultScript.bat](/Scripts/UpdateUnityDefaultScripts.bat) with admin rights
 
 # How to customize scripts
 1. Go to C:\Program Files\Unity\Editor\[Version]\Editor\Data\Resources\ScriptTemplates (This is a Unity default path) and copy the script you want to modify
