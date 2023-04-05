@@ -5,9 +5,9 @@ set "unityReg=HKCU\SOFTWARE\Unity Technologies\Installer"
 set "unityLocationVariable=Location x64"
 
 for /F "delims=" %%a in ('reg query "%unityReg%"') do (
-	for /F "tokens=4,5*" %%b in ('reg query "%%a" /v "%unityLocationVariable%"') do (
+	for /F "tokens=4*" %%b in ('reg query "%%a" /v "%unityLocationVariable%"') do (
+		echo "Copy %modScriptPath% files to %%b %%c\Editor\Data\Resources\ScriptTemplates"
 		xcopy /s /y /q "%modScriptPath%" "%%b %%c\Editor\Data\Resources\ScriptTemplates"
-		
 	)
 )
 pause
